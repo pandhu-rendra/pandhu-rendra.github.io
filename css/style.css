@@ -45,7 +45,7 @@ header {
     font-weight: 600;
 }
 
-span {
+.logo span {
     color: var(--main-color);
 }
 
@@ -105,6 +105,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+.hero span {
+    color: var(--main-color);
 }
 
 .main-content h4 {
@@ -198,6 +202,10 @@ header.sticky{
     gap: 1rem;
 }
 
+.about span {
+    color: var(--main-color);
+}
+
 .about-img img {
     width: 100%;
     height: 530px;
@@ -238,6 +246,10 @@ header.sticky{
 
 .center-text h2 {
     font-size: var(--h2-font);
+}
+
+.center-text span {
+    color: var(--main-color);
 }
 
 .services-content {
@@ -309,6 +321,10 @@ header.sticky{
     background: var(--second-bg-color);
 }
 
+.portfolio span {
+    color: var(--main-color);
+}
+
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -376,7 +392,11 @@ header.sticky{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4.2rem;
+    margin-top: 5.2rem;
+}
+
+.contact-form span {
+    color: var(--main-color);
 }
 
 .contact-form form {
@@ -404,7 +424,6 @@ form textarea::placeholder {
 }
 
 form .send-btn {
-    display: inline-block;
     padding: 11px 26px;
     background: var(--main-color);
     color: var(--bg-color);
@@ -412,8 +431,9 @@ form .send-btn {
     border-radius: 8px;
     font-size: 15px;
     font-weight: 600;
-    transition: all.50s ease;
+    transition: all .50s ease;
     width: 30%;
+    float: left;
 }
 
 form .send-btn:hover {
@@ -423,6 +443,92 @@ form .send-btn:hover {
     cursor: pointer;
 }
 
+.loading-btn {
+    display: none;
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 8px;
+    background: var(--main-color);
+    cursor: not-allowed;
+    width: 29%;
+    margin-left: -210px;
+    color: var(--bg-color);
+}
+
+  .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spinner 1s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-btn span {
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--bg-color);
+    width: 29%;
+    background: var(--main-color);
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    padding: 10px 20px;
+  }
+
+  .alert {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 326px;
+    margin-top: -75px;
+    width: 48%;
+    z-index: 1;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #7dff9e;
+    color: #000;
+  }
+  
+  .alert-warning {
+    border-color: #7dff9e;
+    background-color: #7dff9d9d;
+  }
+  
+  .alert strong {
+    font-weight: bold;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .close-btn:hover {
+    color: #4b420f;
+  }
+  
+  .ri-close-line {
+    vertical-align: middle;
+  }
+  
 .footer {
     padding: 22px 16%;
     background: var(--second-bg-color);

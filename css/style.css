@@ -317,7 +317,7 @@ header.sticky{
     border-bottom: 2px solid var(--main-color);
 }
 
-.projects {
+.project {
     background: var(--second-bg-color);
 }
 

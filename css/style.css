@@ -317,15 +317,15 @@ header.sticky{
     border-bottom: 2px solid var(--main-color);
 }
 
-.portfolio {
+.projects {
     background: var(--second-bg-color);
 }
 
-.portfolio span {
+.projects span {
     color: var(--main-color);
 }
 
-.portfolio-content {
+.projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
